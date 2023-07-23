@@ -3,12 +3,13 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Nina
+title: Nina's blog
 subtitle: ''
 description: ''
 keywords:
 author: Chiawen Yeh
-language: en
+language: 
+    - en
 timezone: ''
 
 # URL
