@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 6.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha256-HtsXJanqjKTc8vVQjO4YMhiqFoXkfBsjBWcX91T1jr8=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"itsninayeh.com","root":"/","images":"/images","scheme":"Mist","darkmode":true,"version":"8.17.1","exturl":false,"sidebar":{"position":"right","display":"remove","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":false,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="最近把自己原本的靜態履歷網頁用 hexo 改成了部落格，筆記幾點 hexo + Github page 的操作過程，最後補一點套用 NexT 樣式的筆記。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hexo 網誌建立與文章頁面建立（本地篇）">
+<meta property="og:url" content="https://itsninayeh.com/2023/07/22/set-up-my-hexo/index.html">
+<meta property="og:site_name" content="Nina&#39;s blog">
+<meta property="og:description" content="最近把自己原本的靜態履歷網頁用 hexo 改成了部落格，筆記幾點 hexo + Github page 的操作過程，最後補一點套用 NexT 樣式的筆記。">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2023-07-22T04:33:05.000Z">
+<meta property="article:modified_time" content="2023-07-23T07:30:15.268Z">
+<meta property="article:author" content="Chiawen Yeh">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://itsninayeh.com/2023/07/22/set-up-my-hexo/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://itsninayeh.com/2023/07/22/set-up-my-hexo/","path":"2023/07/22/set-up-my-hexo/","title":"hexo 網誌建立與文章頁面建立（本地篇）"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>hexo 網誌建立與文章頁面建立（本地篇） | Nina's blog</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Nina's blog</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="Search" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-resume"><a href="/resume/" rel="section"><i class="fa fa-address-card fa-fw"></i>Resume</a></li>
+  </ul>
+</nav>
+
+
+
+
+</header>
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://itsninayeh.com/2023/07/22/set-up-my-hexo/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/nina-pink.jpg">
+      <meta itemprop="name" content="Chiawen Yeh">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Nina's blog">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="hexo 網誌建立與文章頁面建立（本地篇） | Nina's blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          hexo 網誌建立與文章頁面建立（本地篇）
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2023-07-22 13:33:05" itemprop="dateCreated datePublished" datetime="2023-07-22T13:33:05+09:00">2023-07-22</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2023-07-23 16:30:15" itemprop="dateModified" datetime="2023-07-23T16:30:15+09:00">2023-07-23</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>最近把自己原本的靜態履歷網頁用 hexo 改成了部落格，筆記幾點 hexo + Github page 的操作過程，最後補一點套用 NexT 樣式的筆記。</p>
+<span id="more"></span>
+
+<h1 id="快速帶過安裝"><a href="#快速帶過安裝" class="headerlink" title="快速帶過安裝"></a>快速帶過安裝</h1><p>跟著官方文件走 </p>
+<ul>
+<li>安裝 Git</li>
+<li>安裝 Node.js</li>
+<li>安裝 Hexo</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+<p>到這邊，已經可以使用 <code>npx hexo &lt;command&gt;</code> 的指令了<br>如果想要更縮短指令，則可以在 <code>~/.zprofile</code> 中設定 <code>node_modules/</code> 資料夾的相對路徑</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">echo</span> <span class="string">&#x27;PATH=&quot;$PATH:./node_modules/.bin&quot;&#x27;</span> &gt;&gt; ~/.zprofile</span><br></pre></td></tr></table></figure>
+<p>這樣就可以使用<code>hexo &lt;command&gt;</code>的指令來操作。</p>
+<h1 id="設定"><a href="#設定" class="headerlink" title="設定"></a>設定</h1><p>再來先用指令建出網誌的資料夾，資料夾名稱<code>&lt;folder&gt;</code>可以換成任何想要的名字。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init &lt;folder&gt;</span><br><span class="line">$ cd &lt;folder&gt;</span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
+<p>建立出來的網誌資料夾的結構如下</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">├── _config.yml: 設定檔</span><br><span class="line">├── package.json:安裝的套件</span><br><span class="line">├── scaffolds:這個資料夾裡會放一些模板，預設有 draft, page, post 三種</span><br><span class="line">├── source</span><br><span class="line">|   ├── _drafts:我其實沒有這個資料夾</span><br><span class="line">|   └── _posts:文章存放的地方</span><br><span class="line">└── themes:如果從 git clone 樣式下來的話，可以放在這個資料夾</span><br></pre></td></tr></table></figure>
+
+<p>這時跑指令</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>就可以開啟瀏覽器到 <code>http://localhost:4000/</code> 看目前網誌生成的樣子了。</p>
+<h1 id="建立頁面"><a href="#建立頁面" class="headerlink" title="建立頁面"></a>建立頁面</h1><p>頁面建立的模式預設有三種，就是scaffolds底下看到的三種，姑且稱作草稿(Draft)模式，頁面(Page)模式跟文章(Post)模式，不管哪一種都是用這個語法建立頁面</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new [layout] &lt;title&gt;</span><br></pre></td></tr></table></figure>
+<p>而這三種模式到底差在哪？以下是我個人的用法</p>
+<ol>
+<li>文章模式<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new post my-note</span><br></pre></td></tr></table></figure>
+這應該會是之後最常用的，就是按照日期產生文章，當下玩指令hexo就會在<code>source/_posts</code>資料夾下建立出<code>my-note.md</code>的檔案，當把文章寫完之後在跑</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>第一次跑完之後會看到網誌的資料夾下多了一個public資料夾，剛才產生的文章就會在Public資料夾中日期的資料夾底下，產生出一篇 html 檔案，而這篇文章的路徑長得會像這樣 <code>localhost:4000/2023/07/23/my-note/</code>。</p>
+<ol start="2">
+<li>頁面模式<br>如果我今天想要產生一個普通的頁面，跟照日期的網誌不一樣，不想要產生在 _posts 資料夾底下，就可以用頁面模式。<br>舉個常見的例子，我想要建立一個關於我的頁面，而我希望他的路徑是 <code>localhost:4000/about/</code></li>
+</ol>
+<p>這時就可以下</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page --path about/index &quot;About me&quot;</span><br></pre></td></tr></table></figure>
+<p>就會在<code>source/about/index.md</code>的檔案。<br>記得這邊標題<title>是必填的，如果沒有填寫的話，hexo就會在<code>source/_posts</code>資料夾下建立出<code>source/_posts/about/index.md</code>的文章。</p>
+<p>同樣在編輯完後跑指令<code>hexo generate</code>(或縮寫<code>hexo g</code>)，就會產生出對應的 html 檔案。</p>
+<ol start="3">
+<li>草稿模式<br>草稿模式建立的語法跟前面很類似，只是 layout 換成了 draft<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new draft say-hi</span><br></pre></td></tr></table></figure>
+Markdown檔案會建立在 _drafts 這個資料夾中，當跑指令<code>hexo g</code>的時候，可以發現在Public字料夾中不會特別產生 say-hi 的文章或頁面，這就是草稿模式。</li>
+</ol>
+<p>如果今天編輯完這個草稿，並且決定他是一篇文章或是頁面以後，需要用<code>publish</code>的指令來讓這篇草稿移動到在source資料夾下他該在的位置</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo publish [layout] &lt;filename&gt;</span><br></pre></td></tr></table></figure>
+<p>移動之後執行<code>hexo g</code>就會在<code>Publice</code>資料夾產生對應的htm檔案。</p>
+<h1 id="總結"><a href="#總結" class="headerlink" title="總結"></a>總結</h1><p>本來想要一口氣寫到部署的，但我光這樣就寫了三天，還是先下個斷點好了。<br>幾個常用的指令總結一下</p>
+<ol>
+<li><code>hexo server</code> 是開啟 server</li>
+<li><code>hexo new [layout] &lt;title&gt; </code> 是根據模式建立 Markdown 檔案</li>
+<li><code>hexo generate</code> 或 <code>hexo g</code> 在 public 資料夾下建立對應的 html 檔案，也是我們真正可以看到的網頁</li>
+</ol>
+<p>這邊剛好都是部署到GitHub page前在本地端會有的操作，所以這篇姑且就叫它本地篇吧。</p>
+<p>部署的連結，之後補上。</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+
+        
+
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2023</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Chiawen Yeh</span>
+  </div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/mist/" rel="noopener" target="_blank">NexT.Mist</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>
