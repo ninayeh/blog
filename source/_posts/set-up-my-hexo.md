@@ -81,7 +81,7 @@ $ hexo generate
 hexo new page --path about/index "About me"
 ```
 就會在`source/about/index.md`的檔案。
-記得這邊標題<title>是必填的，如果沒有填寫的話，hexo就會在`source/_posts`資料夾下建立出`source/_posts/about/index.md`的文章。
+記得這邊標題是必填的，如果沒有填寫的話，hexo就會在`source/_posts`資料夾下建立出`source/_posts/about/index.md`的文章。
 
 同樣在編輯完後跑指令`hexo generate`(或縮寫`hexo g`)，就會產生出對應的 html 檔案。
 
