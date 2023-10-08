@@ -2,6 +2,8 @@
 title: hexo 網誌建立與文章頁面建立（本地篇）
 date: 2023-07-22 13:33:05
 tags:
+categories:
+  - 學習
 ---
 
 最近把自己原本的靜態履歷網頁用 hexo 改成了部落格，筆記幾點 hexo + Github page 的操作過程，最後補一點套用 NexT 樣式的筆記。
