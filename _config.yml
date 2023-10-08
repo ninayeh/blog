@@ -7,7 +7,7 @@ title: Nina's blog
 subtitle: ''
 description: ''
 keywords:
-author: Chiawen Yeh
+author: Nina Yeh
 language: 
     - en
 timezone: ''
@@ -105,4 +105,4 @@ theme: next
 deploy:
   type: git
   repo: git@github.com:ninayeh/ninayeh.github.io.git
-  branch: gh-pages
+  branch: main
