@@ -40,7 +40,7 @@ custom_file_path:
 #scheme: Muse
 scheme: Mist
 #scheme: Pisces
-#scheme: Gemini
+# scheme: Gemini
 
 # Dark Mode
 darkmode: true
@@ -71,7 +71,7 @@ creative_commons:
   post: false
   # You can set a language value if you prefer a translated version of CC license, e.g. deed.zh
   # CC licenses are available in 39 languages, you can find the specific and correct abbreviation you need on https://creativecommons.org
-  language:
+  language: 
     - en
 
 # Open graph settings
@@ -134,6 +134,7 @@ sidebar:
   #  - hide    expand only when click on the sidebar toggle icon.
   #  - remove  totally remove sidebar including sidebar toggle.
   display: remove
+  # 換 scheme 想顯示 sidebar 的時候記得修改上面的值
 
   # Sidebar padding in pixels.
   padding: 18
@@ -622,7 +623,7 @@ quicklink:
 # Use Animate.css to animate everything.
 # For more information: https://animate.style
 motion:
-  enable: true
+  enable: false
   async: false
   transition:
     # All available transition variants: https://theme-next.js.org/animate/
@@ -726,7 +727,7 @@ gitalk:
   # Gitalk's display language depends on user's browser or system environment
   # If you want everyone visiting your site to see a uniform language, you can set a force language value
   # Available values: en | es-ES | fr | ru | zh-CN | zh-TW
-  language:
+  language: zh-TW
 
 # Utterances
 # For more information: https://utteranc.es
