@@ -20,33 +20,27 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"itsninayeh.com","root":"/","images":"/images","scheme":"Mist","darkmode":true,"version":"8.18.1","exturl":false,"sidebar":{"position":"right","display":"remove","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜尋...","empty":"我們無法找到任何有關 ${query} 的搜索結果","hits_time":"${hits} 找到 ${time} 個結果","hits":"找到 ${hits} 個結果"}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="Trello 是最近發現的好用工作管理工具，這邊主要是紀錄一些基本的功能 先說說他的好用之處： 1. 可以多人共同編輯 2. 畫面簡潔、操作簡單 - 打打字、事項用拖拉就搞定，簡單俐落 3. 功能強大 - 就我所知他可以上傳影片、著名標籤顏色、事件的期限…等 總之,就是一個滿好用的工作追蹤的工具">
+    <meta name="description" content="GitHub 部署我的 Repository 是原本就存在的，所以就略過建立的步驟。也因為預設的 main 分支已經是拿來紀錄每一次的 commit，所以不希望部署的時候蓋掉 main 分支的 commit 紀錄。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Trello - 工作管理工具">
-<meta property="og:url" content="https://itsninayeh.com/2013/09/08/%E5%B7%A5%E5%85%B7/trello-%E5%B7%A5%E4%BD%9C%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/index.html">
+<meta property="og:title" content="Hexo 部署到 GitHub Page">
+<meta property="og:url" content="https://itsninayeh.com/2023/11/19/deploy-hexo-to-github-page/index.html">
 <meta property="og:site_name" content="Nina&#39;s blog">
-<meta property="og:description" content="Trello 是最近發現的好用工作管理工具，這邊主要是紀錄一些基本的功能 先說說他的好用之處： 1. 可以多人共同編輯 2. 畫面簡潔、操作簡單 - 打打字、事項用拖拉就搞定，簡單俐落 3. 功能強大 - 就我所知他可以上傳影片、著名標籤顏色、事件的期限…等 總之,就是一個滿好用的工作追蹤的工具">
+<meta property="og:description" content="GitHub 部署我的 Repository 是原本就存在的，所以就略過建立的步驟。也因為預設的 main 分支已經是拿來紀錄每一次的 commit，所以不希望部署的時候蓋掉 main 分支的 commit 紀錄。">
 <meta property="og:locale" content="zh_TW">
-<meta property="og:image" content="http://yehnotebook.files.wordpress.com/2013/09/1-trello.png?w=300">
-<meta property="og:image" content="http://itsninayeh.files.wordpress.com/2013/09/5-trello.png?w=300">
-<meta property="og:image" content="http://itsninayeh.files.wordpress.com/2013/09/4-trello.png?w=300">
-<meta property="og:image" content="http://itsninayeh.files.wordpress.com/2013/09/7-trello.png?w=300">
-<meta property="og:image" content="http://itsninayeh.files.wordpress.com/2013/09/8-trello.png?w=300">
-<meta property="article:published_time" content="2013-09-08T13:48:41.000Z">
-<meta property="article:modified_time" content="2023-10-08T12:02:26.298Z">
+<meta property="article:published_time" content="2023-11-19T14:05:32.000Z">
+<meta property="article:modified_time" content="2023-11-19T14:08:05.588Z">
 <meta property="article:author" content="Nina Yeh">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://yehnotebook.files.wordpress.com/2013/09/1-trello.png?w=300">
 
 
-<link rel="canonical" href="https://itsninayeh.com/2013/09/08/%E5%B7%A5%E5%85%B7/trello-%E5%B7%A5%E4%BD%9C%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/">
+<link rel="canonical" href="https://itsninayeh.com/2023/11/19/deploy-hexo-to-github-page/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-TW","comments":true,"permalink":"https://itsninayeh.com/2013/09/08/%E5%B7%A5%E5%85%B7/trello-%E5%B7%A5%E4%BD%9C%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/","path":"2013/09/08/工具/trello-工作管理工具/","title":"Trello - 工作管理工具"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-TW","comments":true,"permalink":"https://itsninayeh.com/2023/11/19/deploy-hexo-to-github-page/","path":"2023/11/19/deploy-hexo-to-github-page/","title":"Hexo 部署到 GitHub Page"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>Trello - 工作管理工具 | Nina's blog</title>
+<title>Hexo 部署到 GitHub Page | Nina's blog</title>
   
 
 
@@ -123,7 +117,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-TW">
-    <link itemprop="mainEntityOfPage" href="https://itsninayeh.com/2013/09/08/%E5%B7%A5%E5%85%B7/trello-%E5%B7%A5%E4%BD%9C%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/">
+    <link itemprop="mainEntityOfPage" href="https://itsninayeh.com/2023/11/19/deploy-hexo-to-github-page/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/nina-pink.jpg">
@@ -136,12 +130,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="Trello - 工作管理工具 | Nina's blog">
+      <meta itemprop="name" content="Hexo 部署到 GitHub Page | Nina's blog">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Trello - 工作管理工具
+          Hexo 部署到 GitHub Page
         </h1>
 
         <div class="post-meta-container">
@@ -151,24 +145,9 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">發表於</span>
+      
 
-      <time title="創建時間：2013-09-08 22:48:41" itemprop="dateCreated datePublished" datetime="2013-09-08T22:48:41+09:00">2013-09-08</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">更新於</span>
-      <time title="修改時間：2023-10-08 21:02:26" itemprop="dateModified" datetime="2023-10-08T21:02:26+09:00">2023-10-08</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分類於</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E5%B7%A5%E5%85%B7/" itemprop="url" rel="index"><span itemprop="name">工具</span></a>
-        </span>
+      <time title="創建時間：2023-11-19 23:05:32 / 修改時間：23:08:05" itemprop="dateCreated datePublished" datetime="2023-11-19T23:05:32+09:00">2023-11-19</time>
     </span>
 
   
@@ -180,20 +159,27 @@
     
     
     
-    <div class="post-body" itemprop="articleBody"><p><a target="_blank" rel="noopener" href="http://yehnotebook.files.wordpress.com/2013/09/1-trello.png"><img src="http://yehnotebook.files.wordpress.com/2013/09/1-trello.png?w=300" alt="1-Trello"></a></p>
-<p>Trello 是最近發現的好用工作管理工具，這邊主要是紀錄一些基本的功能 先說說他的好用之處： 1. 可以多人共同編輯 2. 畫面簡潔、操作簡單 - 打打字、事項用拖拉就搞定，簡單俐落 3. 功能強大 - 就我所知他可以上傳影片、著名標籤顏色、事件的期限…等 總之,就是一個滿好用的工作追蹤的工具</p>
+    <div class="post-body" itemprop="articleBody"><h1 id="GitHub-部署"><a href="#GitHub-部署" class="headerlink" title="GitHub 部署"></a>GitHub 部署</h1><p>我的 Repository 是原本就存在的，所以就略過建立的步驟。<br>也因為預設的 main 分支已經是拿來紀錄每一次的 commit，所以不希望部署的時候蓋掉 main 分支的 commit 紀錄。</p>
 <span id="more"></span>
-<p><a target="_blank" rel="noopener" href="http://itsninayeh.files.wordpress.com/2013/09/5-trello.png"><img src="http://itsninayeh.files.wordpress.com/2013/09/5-trello.png?w=300" alt="5-Trello"></a></p>
-<p>Trello 主要分為 Board &#x2F; List &#x2F; Card</p>
-<p><img src="http://itsninayeh.files.wordpress.com/2013/09/4-trello.png?w=300" alt="4-Trello"></p>
-<p>Board 就是一個個專案,點選New Board輸入專案的名字就可以了 List 每個專案的不同任務 預設的狀況是 To do &#x2F; Doing &#x2F;Done 就依照不同專案做不同任務的List Card 就是蒐集到跟List有關資訊的擺放、或是代辦事項等等的</p>
-<p><a target="_blank" rel="noopener" href="http://itsninayeh.files.wordpress.com/2013/09/7-trello.png"><img src="http://itsninayeh.files.wordpress.com/2013/09/7-trello.png?w=300" alt="7-Trello"></a></p>
-<p>所有的card都可以用拖的方式放到List當中</p>
-<p><a target="_blank" rel="noopener" href="http://itsninayeh.files.wordpress.com/2013/09/8-trello.png"><img src="http://itsninayeh.files.wordpress.com/2013/09/8-trello.png?w=300" alt="8-Trello"></a></p>
-<p>點開 Card 之後，下方可以是一個討論串，針對同一個事件可以有回應或是設定截止日期、插入夾帶檔案，還可以加入card List (就是可以打勾的那種清單) 一開始在用Trello的時候一直找不到刪除card的方法 後來發現他藏在card編輯畫面右下角的 More… 裡面 找了一陣子才發現 可能是怕誤刪吧。</p>
-<blockquote>
-<p>這不是引用，這是Nina 碎碎念 我是今年暑假發現Trello這個網站的 所以還沒來得及跟同學們一起共同使用看看效果如何 期待開學過後可以用它提升每次作業的效率 最近用Trello開了一個願望清單 上面拉哩拉紮的寫了很多好像有點遙遠的夢想 希望拿出來看看它，可以激發我的動力 因為我不希望另外兩個List (Doing and Done) 永遠都是空白的 以上。</p>
-</blockquote>
+
+<p>後來是參考 Hexo 官方的 <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment#Git">One-Command Deployment - Git</a> 的篇章，在設定時讓部屬的時候用的會是 gh-pages。</p>
+<p>這邊也有中文版的文件 <a target="_blank" rel="noopener" href="https://hexo.io/zh-tw/docs/github-pages.html#%E4%B8%80%E9%8D%B5%E9%83%A8%E5%B1%AC">在 GitHub Pages 上部署 Hexo - 一鍵部署</a></p>
+<p>按照步驟</p>
+<ol>
+<li><p>安裝 hexo-deployer-git</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>編輯 _config.yml </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: git@github.com:ninayeh/ninayeh.github.io.git</span><br><span class="line">  branch: gh-pages</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>使用指令部署網站<br><code>hexo clean &amp;&amp; hexo deploy</code></p>
+</li>
+<li><p>檢查網站 username.github.io</p>
+</li>
+</ol>
+<h1 id="最後"><a href="#最後" class="headerlink" title="最後"></a>最後</h1><p>雖然現在整理起來不過是幾行字的事情，但當時在操作上因為弄錯了導致分支沒有辦法如我預期的一個是紀錄、另一個是部署。</p>
+<p>好在參考了文件，也參考了許多人的筆記，最後能夠以自己想要的形式完成了分支的管理，部落格也部署成功了。</p>
+<p>參考：<a target="_blank" rel="noopener" href="https://blog.ccknbc.cc/posts/hexo-toss/">https://blog.ccknbc.cc/posts/hexo-toss/</a></p>
 
     </div>
 
@@ -211,7 +197,7 @@
   </li>
   <li class="post-copyright-link">
       <strong>文章連結：</strong>
-      <a href="https://itsninayeh.com/2013/09/08/%E5%B7%A5%E5%85%B7/trello-%E5%B7%A5%E4%BD%9C%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/" title="Trello - 工作管理工具">https://itsninayeh.com/2013/09/08/工具/trello-工作管理工具/</a>
+      <a href="https://itsninayeh.com/2023/11/19/deploy-hexo-to-github-page/" title="Hexo 部署到 GitHub Page">https://itsninayeh.com/2023/11/19/deploy-hexo-to-github-page/</a>
   </li>
   <li class="post-copyright-license">
       <strong>版權聲明： </strong>本網誌所有文章除特別聲明外，均採用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/en" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 許可協議。轉載請註明出處！
@@ -224,14 +210,11 @@
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2013/08/30/%E5%B7%A5%E5%85%B7/%E5%AE%89%E8%A3%9D-joomla3-1-5-2/" rel="prev" title="免費空間申請 - byethost">
-                  <i class="fa fa-angle-left"></i> 免費空間申請 - byethost
+                <a href="/2023/07/22/set-up-my-hexo/" rel="prev" title="Hexo 網誌建立與文章頁面建立（本地篇）">
+                  <i class="fa fa-angle-left"></i> Hexo 網誌建立與文章頁面建立（本地篇）
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2013/10/13/%E9%83%A8%E8%90%BD%E6%A0%BC/%E4%B8%80%E8%BC%A9%E5%AD%90%E9%A9%95%E5%82%B2/" rel="next" title="永遠的小天使">
-                  永遠的小天使 <i class="fa fa-angle-right"></i>
-                </a>
             </div>
           </div>
     </footer>
