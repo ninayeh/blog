@@ -2,6 +2,8 @@
 title: Hexo 部署到 GitHub Page
 date: 2023-11-19 23:05:32
 tags:
+categories:
+  - 學習
 ---
 
 
