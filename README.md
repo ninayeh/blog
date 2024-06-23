@@ -5,8 +5,7 @@ $ hexo server
 ```
 
 ## 建立文章  
-
-1. 草稿
+1. 草稿  
 建立草稿
 ```
 hexo new draft say-hi
