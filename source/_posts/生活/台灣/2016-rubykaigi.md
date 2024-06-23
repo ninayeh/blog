@@ -3,7 +3,8 @@ title: 2016 關西行與Rubykaigi
 tags: []
 id: '1418'
 categories:
-  - 日記
+  - - 生活
+    - 台灣日記
 date: 2016-09-26 00:04:26
 ---
 

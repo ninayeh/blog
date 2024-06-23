@@ -3,7 +3,8 @@ title: 日本九州 Ruby Kaigi 2017 與員工旅遊
 tags: []
 id: '2280'
 categories:
-  - 日記
+  - - 生活
+    - 台灣日記
 date: 2017-10-14 14:58:40
 ---
 

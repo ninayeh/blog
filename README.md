@@ -30,3 +30,8 @@ hexo new page --path about/index "About me"
 $ hexo generate
 ```
 
+## Deploy
+```
+$ hexo clean && hexo deploy
+```
+
